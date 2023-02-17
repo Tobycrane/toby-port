@@ -1,0 +1,56 @@
+.portfolio-section {
+    padding: 150px 0 0;
+}
+
+.portfolio-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 5%;
+}
+
+.portfolio-container img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.web-1, .web-2, .web-3, .web-4, .web-5, .web-6, .web-7, .web-8, .web-9, .web-10, .web-11, .web-12 {
+    position: relative;
+    /* width: 100%; */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: 0;
+    background: purple;
+    z-index: -1;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.overlay .text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: bold;
+    top: 70%;
+    left: 50%;
+    transform: translate(0%, 100%);
+    /* -ms-transform: translate(-20%, -20%); */
+    text-align: center;
+    margin: 0 auto;
+}
+.overlay .text h1{
+    font-size: 1.3rem;
+}
+.web-1:hover .overlay, .web-2:hover .overlay, .web-3:hover .overlay, .web-4:hover .overlay, .web-5:hover .overlay, .web-6:hover .overlay, .web-7:hover .overlay, .web-8:hover .overlay, .web-9:hover .overlay, .web-10:hover .overlay, .web-11:hover .overlay, .web-12:hover .overlay{
+    opacity: .9;
+    z-index: 1;
+}
